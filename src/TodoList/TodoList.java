@@ -15,18 +15,18 @@ public class TodoList {
     }
 
     public void completeTask(int index) {
-        if (index < 0 || index >= tasks.size()) {
+        if (index < 0 || index > tasks.size()) {
             System.out.println("Oops!! Invalid Task number");
         } else {
-            this.tasks.get(index).complete();
+            this.tasks.get(index - 1).complete();
         }
     }
 
     public void removeTask(int index) {
-        if (index < 0 || index >= tasks.size()) {
+        if (index < 0 || index > tasks.size()) {
             System.out.println("Oops!! Invalid Task number");
         } else {
-            this.tasks.remove(index);
+            this.tasks.remove(index - 1);
         }
     }
 
