@@ -10,7 +10,7 @@ public class Task {
     }
 
     public void complete() {
-        this.isCompleted = false;
+        this.isCompleted = true;
     }
 
     public String toString() {
